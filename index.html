@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referências Bibliográficas & Links Úteis</title>
+    <style>
+        :root {
+            --bg-color: #f3f4f6;
+            --primary-color: #2563eb; /* Azul Institucional */
+            --hover-color: #1d4ed8;
+            --text-color: #1f2937;
+            --card-bg: #ffffff;
+            --accent-color: #eff6ff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        /* Container Principal */
+        .container {
+            width: 100%;
+            max-width: 680px;
+            text-align: center;
+        }
+
+        /* Perfil / Cabeçalho */
+        .profile {
+            margin-bottom: 30px;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+            margin-bottom: 15px;
+            background-color: #ddd; /* Cor caso não tenha imagem */
+        }
+
+        .profile h1 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            color: #111;
+        }
+
+        .profile p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Estilo dos Acordeões (Categorias) */
+        details {
+            background: var(--card-bg);
+            margin-bottom: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            overflow: hidden;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        summary {
+            padding: 16px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.05rem;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+        }
+
+        summary:hover {
+            background-color: #f9fafb;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        details[open] summary::after {
+            content: '-';
+        }
+
+        /* Lista de Links dentro do Acordeão */
+        .link-list {
+            padding: 10px 15px 20px 15px;
+            background-color: var(--accent-color);
+        }
+
+        .link-btn {
+            display: block;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 14px 20px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .link-btn:last-child {
+            margin-bottom: 0;
+        }
+
+        .link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .link-btn span {
+            font-size: 0.8rem;
+            color: #999;
+            margin-left: 10px;
+        }
+
+        /* Links de Destaque (Drive/Empresa) */
+        .highlight-section .link-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        .highlight-section .link-btn:hover {
+            background-color: var(--hover-color);
+            color: white;
+        }
+
+        .highlight-section .link-btn span {
+            color: rgba(255,255,255,0.8);
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        /* Responsividade Mobile */
+        @media (max-width: 480px) {
+            .container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="profile">
+            <img src="https://ui-avatars.com/api/?name=Refs+Biblio&background=2563eb&color=fff&size=128" alt="Logo">
+            <h1>Referências Bibliográficas</h1>
+            <p>Legislação, Contabilidade e Documentos Úteis</p>
+        </div>
+
+        <details open>
+            <summary>Legislação Federal & Trabalhista</summary>
+            <div class="link-list">
+                <a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_blank" class="link-btn">Constituição Federal</a>
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm" target="_blank" class="link-btn">Lei Complementar 123/2006 (Microempresa)</a>
+                <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm" target="_blank" class="link-btn">CLT - Consolidação das Leis do Trabalho</a>
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/L8036.htm" target="_blank" class="link-btn">Lei 8.036/1990 (FGTS)</a>
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/l8212cons.htm" target="_blank" class="link-btn">Lei 8.212/1991 (Seguridade Social)</a>
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/L4090.htm" target="_blank" class="link-btn">Lei 4.090/1962 (13º Salário)</a>
+                <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank" class="link-btn">Lei Complementar 214</a>
+            </div>
+        </details>
+
+        <details>
+            <summary>Legislação Estadual (Bahia)</summary>
+            <div class="link-list">
+                <a href="https://www.sefaz.ba.gov.br/" target="_blank" class="link-btn">SEFAZ BA (Site Oficial)</a>
+                <a href="https://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2012_13780_ricms_texto_2021.pdf" target="_blank" class="link-btn">Decreto 13.780/2012 (RICMS Texto)</a>
+                <a href="http://mbusca.sefaz.ba.gov.br/DITRI/normas_complementares/decretos/decreto_2012_13780_ricms_anexo_1_vigente_2025.pdf" target="_blank" class="link-btn">Decreto 13.780/2012 (Anexo 1)</a>
+                <a href="https://mbusca.sefaz.ba.gov.br/DITRI/leis/leis_estaduais/legest_1996_7014_icmscomnotas.pdf" target="_blank" class="link-btn">Lei 7.014/1996 (ICMS com notas)</a>
+            </div>
+        </details>
+
+        <details>
+            <summary>Contabilidade, Normas & SPED</summary>
+            <div class="link-list">
+                <a href="https://www.confaz.fazenda.gov.br/legislacao/ajustes/sinief/cfop_cvsn_1-6.24" target="_blank" class="link-btn">CONFAZ (CFOP/CVSN)</a>
+                <a href="http://sped.rfb.gov.br/pasta/show/1616" target="_blank" class="link-btn">SPED (Receita Federal)</a>
+                <a href="https://www.gov.br/participamaisbrasil/nbc-tg-1001-contabilidade-para-pequenas-empresas" target="_blank" class="link-btn">NBC TG 1001 (Pequenas Empresas)</a>
+                <a href="https://www.gov.br/participamaisbrasil/nbctg-1002-contabilidade-para-microempresas" target="_blank" class="link-btn">NBC TG 1002 (Microempresas)</a>
+                <a href="https://cfc.org.br/tecnica/normas-brasileiras-de-contabilidade/normas-simplificadas-para-pmes/" target="_blank" class="link-btn">Normas Simplificadas para PMEs (CFC)</a>
+                <a href="https://www2.cfc.org.br/sisweb/sre/detalhes_sre.aspx?Codigo=2017/NBCTG16(R2)&arquivo=NBCTG16(R2).doc" target="_blank" class="link-btn">NBC TG 16 (R2) - Estoques</a>
+                <a href="https://www2.cfc.org.br/sisweb/sre/detalhes_sre.aspx?Codigo=2022/ITG1000&arquivo=ITG%201000.doc" target="_blank" class="link-btn">ITG 1000 (Modelo Contábil)</a>
+            </div>
+        </details>
+
+        <details>
+            <summary>Artigos Técnicos & Guias</summary>
+            <div class="link-list">
+                <a href="https://www.contabeis.com.br/tributario/cst/" target="_blank" class="link-btn">Tabela CST (Contábeis)</a>
+                <a href="https://www.portaltributario.com.br/artigos/oquee_lucropresumido.htm" target="_blank" class="link-btn">O que é Lucro Presumido</a>
+                <a href="https://www.serasaexperian.com.br/conteudos/lucro-real/" target="_blank" class="link-btn">Lucro Real (Serasa)</a>
+                <a href="https://www.taxgroup.com.br/intelligence/lucro-real-entenda-como-funciona-esse-regime-tributario/" target="_blank" class="link-btn">Entenda o Lucro Real (TaxGroup)</a>
+                <a href="https://www.omie.com.br/blog/icms-o-que-e-como-acessar-calculo-muito-mais/" target="_blank" class="link-btn">Guia ICMS (Omie)</a>
+                <a href="https://www.totvs.com/blog/servicos-financeiros/contabilidade-de-custos/" target="_blank" class="link-btn">Contabilidade de Custos (TOTVS)</a>
+                <a href="https://nasajon.com.br/contabilizacao-de-folha-de-pagamento-guia-completo/" target="_blank" class="link-btn">Guia: Contabilização Folha de Pgto</a>
+                <a href="https://uniaoassessoria.com.br/difal-empresario-atencao-ao-comprar-de-outro-estado/" target="_blank" class="link-btn">DIFAL: Compras interestaduais</a>
+                <a href="https://www.pwc.com.br/pt/thinking-about-taxes/tax-intelligence/2025/reforma-sobre-a-renda-irpfm-pl-n-1087-2025.pdf" target="_blank" class="link-btn">Reforma sobre a Renda (PWC)</a>
+                <a href="https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria/arquivos/perguntas-e-respostas-reforma-tributaria_.pdf" target="_blank" class="link-btn">Perguntas e Respostas Reforma Tributária</a>
+            </div>
+        </details>
+
+        <details>
+            <summary>Ferramentas & Consultas</summary>
+            <div class="link-list">
+                <a href="https://cnae.ibge.gov.br/" target="_blank" class="link-btn">Consulta CNAE (IBGE)</a>
+                <a href="https://www8.receita.fazenda.gov.br/simplesnacional/aplicacoes.aspx?id=21" target="_blank" class="link-btn">Simples Nacional</a>
+                <a href="https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp" target="_blank" class="link-btn">Consulta Cartão CNPJ</a>
+            </div>
+        </details>
+
+        <div class="highlight-section" style="width: 100%; margin-top: 20px;">
+            <a href="https://www.instagram.com/casabellaparipiranga/" target="_blank" class="link-btn">
+               📷 Instagram: Casa Bella Paripiranga
+            </a>
+            <a href="https://www.econodata.com.br/consulta-empresa/45483071000120-casa-bella-variedades-ltda" target="_blank" class="link-btn">
+               🏢 Casa Bella (Dados Econodata)
+            </a>
+            <a href="https://drive.google.com/drive/folders/1YNqaosbcASRXZPOVr2vQKuDmaZxirKm3?usp=sharing" target="_blank" class="link-btn">
+               📂 Acessar Google Drive (Pasta 1)
+            </a>
+            <a href="https://drive.google.com/drive/folders/1vCf7vcyxbEpuJ92xaEV8Pf7TUWiwjTNU?usp=drive_link" target="_blank" class="link-btn">
+               📂 Acessar Google Drive (Pasta 2)
+            </a>
+        </div>
+
+        <footer>
+            <p>Compilado de Referências - 2025</p>
+        </footer>
+
+    </div>
+</body>
+</html>
